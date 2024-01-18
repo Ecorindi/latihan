@@ -5,4 +5,6 @@ donut rainbow
 cappucino
 creamy late
 mocacino
-oreo milk 
+oreo milk
+milk strawberry
+milk vanila

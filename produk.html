@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            /* Di bawah ini (yang diapit kutip) adalah background header yaitu gambar foto pahlawan nasional, silakan ganti dengan file lain*/
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXRAwHgziFFXCN_VX_CztlM99bbBWGMiPIJA&usqp=CAU");
+
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) Daftar link yang ada di bagian atas halaman -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">Home</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#E'coDonuts&Coffee" class="w3-button w3-block w3-black">E'co Donuts & Coffee</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#Produk" class="w3-button w3-block w3-black">Produk</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#DaftarAkun" class="w3-button w3-block w3-black">Daftar Akun</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image/ Header dengan gambar -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">E'co Donuts & Coffee</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">Best Donuts<br>Best Coffee</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Order your favorite E'co anywhere with our App!</span>
+        </div>
+    </header>
+
+    <!-- Menambahkan warna background dan tulisan besar di seluruh halaman -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- Kontainer E'co Donuts & Coffee -->
+        <div class="w3-container" id="E'coDonuts&Coffee">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">E'co Donuts & Coffee</span></h5>
+                <p>
+                    Donuts dan Coffee bercita rasa premium, dengan bahan-bahan berkualitas!
+<br> berbagai varian rasa yang istimewa dengan harga yang terjangkau</p>
+                <p>
+Kontak Kami: 089513951047
+<br>Kirim Email: Ecodonutscoffiee@gmail.com
+<br> kunjungi Kantor &Galeri kami: Jl. Bojong Koneng Atas No.8, Cibeunying, Kec. Cimenyan, Kabupaten Bandung 40191
+Open : 8am – 7pm
+</p>
+                
+<div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>Dapatkan paket serta promo menarik yang bisa kamu dapatkan di website resmi kami!</i></p>
+                   
+                </div>
+                <!-- Di bawah ini adalah gambar pahlawan nasional. Silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar Paket Promo Produk "
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBYGqAkrvpgTJCawPBIaFEGhaII16lWkWrG0tyiGj14_Dn9yauvfHNSxkWfNMNZXvpzFo&usqp=CAU"
+                    style="width:100%;max-width:1000px" class="w3-margin-top">
+
+            </div>
+        </div>
+
+        <!-- Kontainer Produk -->
+        <div class="w3-container" id="Produk">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Produk</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'MenuDonuts');" id="myLink">
+                        <div class="w3-col s6 tablink">Menu Donuts</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'MenuCoffee');">
+                        <div class="w3-col s6 tablink">Menu Coffee</div>
+                    </a>
+                </div>
+
+                <div id="MenuDonuts" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Almaco</h5>
+                    <p class="w3-text-grey">Donuts dengan toping cream  coklat putih dan kacang almond (rp.5000)</p><br>
+
+                    <h5>Choco echo</h5>
+                    <p class="w3-text-grey">Donuts  isian dark chocolate dengan topping celupan dark chocolate (Rp. 5000)</p><br>
+
+                    <h5>Cheese Calicious</h5>
+                    <p class="w3-text-grey">Donuts  isian krim cheese cake, topping coklat dengan taburan remah-remah Oreo, dan coklat putih (Rp. 5000)</p><br>
+
+                    <h5>Tira Missu</h5>
+                    <p class="w3-text-grey">Donuts dengan topping tiramisu isian krim tiramisu (Rp. 5000)</p><br>
+
+                </div>
+
+                <div id="MenuCoffee" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Caramel cococcino</h5>
+                    <p class="w3-text-grey">caramel dan  es cappuccino (Rp. 8000)</p><br>
+
+                    <h5>Avocado mocca</h5>
+                    <p class="w3-text-grey">Coffee dengan campuran ice nugget, susu segar,  bubuk alpukat, topping mocha cream dan bubuk cokelat (Rp. 8000)</p><br>
+
+                    <h5>Ecoccino </h5>
+                    <p class="w3-text-grey">Campuran espresso, susu hangat dan milk foam (Rp. 8000)</p><br>
+
+                    <h5>Cappuccino Berry</h5>
+                    <p class="w3-text-grey">kopi aroma buah berry (Rp. 8000)</p><br>
+
+                </div>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Paket Promo"
+                    src="data:image/jpeg;base64,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"
+                    style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Kontainer DaftarAkun-->
+        <div class="w3-container" id="Daftar Akun" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Daftar Akun</span></h5>
+                <p>Untuk Mendapatkan  voucher Paket Menarik E'co Donuts & Coffee! bergabunglah disini</p>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar Paket Promo"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    style="width:100%">
+                  <p><span class="w3-tag">Isilah Formulir dibawah ini</p>
+
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required
+                            name="Nama"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Angka Favorit"
+                            required name="E"co"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local"
+                            placeholder="Tanggal dan Waktu" required name="Tanggal" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Email Atau Nomer Telepon" required name="Email/Telepon"></p>
+                    <p><button class="w3-button w3-black" type="submit">Daftar</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+<a href="index.html":> list</a>
+</body>
+
+</html>
